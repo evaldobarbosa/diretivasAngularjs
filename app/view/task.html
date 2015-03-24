@@ -1,0 +1,8 @@
+<li>
+	<h4>
+		<i class="fa fa-lock fa-2x" ng-show="task.blocked" ng-click="task.blocked=!task.blocked"></i>
+		<a href="#" ng-show="!task.blocked" ng-click="task.done=!task.done">
+			<i class="fa fa-check-circle fa-2x" ng-show="task.done"></i><i class="fa fa-circle fa-2x" ng-show="!task.done"></i></a>
+		{{task.title}}
+	</h4>
+</li>
