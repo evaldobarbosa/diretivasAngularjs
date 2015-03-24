@@ -11,23 +11,30 @@
 <body ng-controller="MainController">
 	<div class="container">
 		<div class="row">
-			<h1><i class="fa fa-github-square"></i>/evaldobarbosa/{{teste}}</h1>
+			<h1><i class="fa fa-github-square"></i>/evaldobarbosa/diretivasAngularjs</h1>
+		</div>
+		<div class="row">
+			<h3>{{teste}}</h3>
 		</div>
 	</div>
-
+	<hr>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<form action="#" ng-submit="addTask(nova)">
-					<label>Titulo: </label>
-					<input type="text" ng-model="nova.title">
-					<button>Adicionar</button>
-				</form>
-				<todo-list title="{{nomeLista}}">
-					<task ng-repeat="task in tasks"></task>
-				</todo-list>
+				<div class="minhasTasks">
+					<todo-list title="{{nomeLista}}">
+						<task ng-repeat="task in tasks"></task>
+					</todo-list>
+				</div>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-lg-5 col-lg-offset-1">
+				<h4>As tasks em tempo real</h4>
+
+				<form action="#" ng-submit="addTask(nova)" role="form">
+					<input type="text" ng-model="nova.title" class="form-control" placeholder="Titulo da nova task">
+					<button class="btn btn-success btn-block">Adicionar</button>
+				</form>
+				
 				<ul class="list-unstyled">
 					<li ng-repeat="task in tasks">
 						title: {{task.title}},
