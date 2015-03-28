@@ -31,3 +31,4 @@ Lista 2
 - http://sporto.github.io/blog/2013/06/24/nested-recursive-directives-in-angular/
 - http://tableless.com.br/diretivas-angularjs-abas/
 - http://cironunes.com/angular-components-talk/
+- http://www.jvandemo.com/the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives/
